@@ -1,0 +1,58 @@
+.wraper-data-picker {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  margin-right: 8px;
+}
+#datetime-picker {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 250px;
+}
+#datetime-picker:hover {
+  border: 1px solid #000000;
+}
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+  color: #000000;
+}
+#datetime-picker:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+}
+.btn-start {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.btn-start:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+.timer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+.label {
+  text-transform: uppercase;
+}
