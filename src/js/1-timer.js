@@ -11,9 +11,11 @@ const refers = {
   timerMinutes: document.querySelector('[data-minutes]'),
   timerSeconds: document.querySelector('[data-seconds]'),
 };
+
 const { input, btnStart, timerDays, timerHours, timerMinutes, timerSeconds } =
   refers;
 let userSelectedDate;
+btnStart.disabled = true;
 
 const options = {
   enableTime: true,
@@ -44,8 +46,8 @@ flatpickr(input, options);
 btnStart.addEventListener('click', handleClick);
 function handleClick() {
   input.disabled = true;
+  btnStart.disabled = true;
   const idInterval = setInterval(() => {
-    btnStart.disabled = true;
     const diff = userSelectedDate - Date.now();
     const convertData = convertMs(diff);
     const { days, hours, minutes, seconds } = convertData;
