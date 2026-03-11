@@ -43,9 +43,9 @@ flatpickr(input, options);
 
 btnStart.addEventListener('click', handleClick);
 function handleClick() {
+  input.disabled = true;
   const idInterval = setInterval(() => {
     btnStart.disabled = true;
-    input.disabled = true;
     const diff = userSelectedDate - Date.now();
     const convertData = convertMs(diff);
     const { days, hours, minutes, seconds } = convertData;
