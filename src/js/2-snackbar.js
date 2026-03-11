@@ -4,8 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 const form = document.querySelector('.form');
 const inputDelay = document.querySelector('.docinput-delay');
 const inputFulfilled = document.querySelector('[value="fulfilled"]');
-const inputRejected = document.querySelector('[value="rejected"]');
-// const btnFormSbm = document.querySelector('.btn-submit');
+
 form.addEventListener('submit', handleSubmit);
 function handleSubmit(e) {
   e.preventDefault();
